@@ -1,0 +1,40 @@
+@import "src/scss/vars";
+
+.container {
+  max-width: rem(1445px);
+  padding: rem(30px) rem(15px);
+  margin: 0 auto;
+
+  form {
+    justify-content: center;
+  }
+}
+
+.wrapper {
+  display: flex;
+  margin-top: rem(20px);
+
+  &.onlyMain {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+  }
+}
+
+//.first__column {
+//
+//}
+
+.second__column {
+  flex-shrink: 0;
+}
+
+@media (max-width: rem(900px)) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .second__column {
+    order: -1;
+  }
+}

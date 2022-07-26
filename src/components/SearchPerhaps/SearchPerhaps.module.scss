@@ -1,0 +1,31 @@
+@import "src/scss/vars";
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.perhaps {
+  margin: rem(25px) 0 rem(15px) 0;
+  color: #f5f5f5;
+
+  span {
+    color: #5693c3;
+    cursor: pointer;
+    border-bottom: rem(1px) solid transparent;
+    transition: all .16s ease-in-out;
+
+    &:hover {
+      border-bottom: rem(1px) solid #5693c3;
+    }
+  }
+}
+
+.correct {
+  font-size: rem(18px);
+  line-height: rem(28.8px);
+}
+
+.origin {
+  font-size: rem(15px);
+}

@@ -1,0 +1,37 @@
+@import "src/scss/vars";
+
+.wrapper {
+  padding: rem(25px);
+  background-color: #2a2a2a2e;
+  border-radius: rem(6px);
+
+  & + & {
+    margin-top: rem(15px);
+  }
+}
+
+.loader {
+  width: fit-content;
+  height: rem(95px);
+}
+
+.title {
+  width: rem(200px);
+  height: rem(24px);
+}
+
+.url {
+  width: rem(272px);
+  height: rem(19px);
+}
+
+.description {
+  width: 99%;
+  height: rem(36px);
+}
+
+@media (max-width: rem(500px)) {
+  .loader {
+    height: 100%;
+  }
+}

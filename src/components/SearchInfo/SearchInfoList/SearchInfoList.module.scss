@@ -1,0 +1,20 @@
+@import "src/scss/vars";
+
+.item {
+  display: flex;
+  font-size: rem(14px);
+  line-height: rem(22px);
+  color: #f5f5f5;
+
+  & + & {
+    margin-top: rem(7px);
+  }
+}
+
+.title {
+  font-weight: 500;
+}
+
+.value {
+  margin-left: rem(10px);
+}

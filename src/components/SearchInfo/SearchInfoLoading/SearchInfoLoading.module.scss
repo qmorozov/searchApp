@@ -1,0 +1,51 @@
+@import "src/scss/vars";
+
+.wrapper {
+  background-color: $main-bg-color;
+  border-radius: rem(8px);
+}
+
+.loader {
+  width: 100%;
+  height: rem(575px);
+}
+
+.img {
+  width: 100%;
+  height: rem(246px);
+}
+
+.title {
+  width: rem(115px);
+  height: rem(35px);
+
+  &__line {
+    width: 100%;
+    height: rem(35px);
+  }
+
+  &__description {
+    width: 100%;
+    height: rem(27px);
+  }
+}
+
+.line {
+  width: 100%;
+  height: rem(2px);
+}
+
+.description {
+  width: 100%;
+  height: rem(119px);
+}
+
+.info__title {
+  width: rem(100px);
+  height: rem(16px);
+}
+
+.info__description {
+  width: 100%;
+  height: rem(16px);
+}

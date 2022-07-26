@@ -1,0 +1,16 @@
+// colors
+$main-color: #0078d4;
+$error-color: #ff0000ad;
+$main-bg-color: #4a4a4a;
+
+// animation
+$transition: all .2s ease-in-out;
+
+// pxl to rem
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function rem($num) {
+  @return (strip-unit($num) / 16) * 1rem;
+}
