@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import parse from 'html-react-parser';
+import he from 'he';
 import {useDispatch} from "react-redux";
 import {setSearchQuery} from "../../redux/actions/searchQuery";
 import {fetchItems, setLoaded} from "../../redux/actions/items";
@@ -11,8 +12,8 @@ const SearchOption = ({items, isLoaded}) => {
 
     const newSearch = value => {
         dispatch(setLoaded(false));
-        dispatch(setSearchQuery(value));
-        dispatch(fetchItems(value));
+        dispatch(setSearchQuery(he.decode(value)));
+        dispatch(fetchItems(he.decode(value)));
     };
 
     return (
